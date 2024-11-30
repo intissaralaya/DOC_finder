@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indexation et Recherche de fichiers</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Indexation et Recherche de fichiers</h1>
+    <form action="/search" method="post">
+        <p>"Streamline Your Search, Discover Your Files."</p>
+        <label for="query"></label>
+        <input type="search" name="query" id="query" placeholder="Search...">
+        
+    </form>
+</body>
+</html>

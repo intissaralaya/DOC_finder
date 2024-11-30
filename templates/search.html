@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de recherche</title>
+</head>
+<body>
+    <h1>Résultats de recherche</h1>
+    <ul>
+        {% for result in results %}
+            <li>
+                <form action="/open_file" method="post">
+                    <input type="hidden" name="file_path" value="{{ result }}">
+                    <button type="submit">Ouvrir {{ result }}</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
